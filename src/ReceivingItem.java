@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 public class ReceivingItem {
     char[] kode;
     Item barang;
@@ -20,7 +20,7 @@ public class ReceivingItem {
     }
 
     public void updateStok (char[] kode_item, int kuantiti){
-        if(this.barang.kode.equals(kode_item)) {
+        if(Arrays.equals(this.barang.kode, kode_item)) {
             if(this.barang.stok >= kuantiti){
                 this.barang.stok -= kuantiti;                
             }

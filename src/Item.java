@@ -5,6 +5,7 @@ public class Item {
     int stok;
 
     Item(char[] kode, String nama, String kategori, int stok) {
+        setKode(kode);
         this.kode = kode;
         this.nama = nama;
         this.kategori = kategori;
